@@ -35,22 +35,38 @@ body {
 #image-container {
     position: relative;
     background-color: #60B8DA;
+    flex: 1;
 }
 
-img {
+#sign-up-container {
+    flex: 1;
+}
+
+
+img#background {
     max-width: 100%;
     width: auto;
     height: auto;
    
 }
 
+#whale {
+    width: auto;
+    max-height: 100%;
+}
+
 #logo-container {
-    background-color: #030303;
+    background-color: rgba(3, 3, 3, 0.5);
     height: 10%;
     width: 100%;
     position: absolute;
     top: 15%;
-    opacity: 50%;
+    font-size: 4vw;
+    color: #FFFFFF;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -59,7 +75,7 @@ img {
 
 #sign-up-title {
     text-align: center;
-    margin: 20px 40px;
+    margin: 40px 40px;
     font-weight: 600;
     font-size: 48px;
 }
@@ -141,19 +157,20 @@ a {
 
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
     body {
         flex-direction: row;
     }
 
     #image-container {
-        width: 40%;
+        max-width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
-    img {
+    img#background {
         max-width: 100%;
         width: auto;
        
@@ -165,13 +182,17 @@ a {
     }
 
     #sign-up-container {
-        flex: 1;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
     }
 
     #row {
         display: flex;
         justify-content: space-between;
-        padding: px 50px;
+        padding: 25px 50px;
     }
 
     label {
@@ -187,5 +208,9 @@ a {
     #submit-section {
         padding: 25px 50px;;
         align-items: flex-start;
+    }
+
+    #log-in-container {
+        justify-content: space-between;
     }
 }

@@ -1,0 +1,11 @@
+body {
+    display: flex;
+}
+
+#image-container {
+    flex: 1;
+}
+
+#sign-up-container {
+    flex: 1;
+}
