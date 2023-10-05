@@ -92,6 +92,7 @@ p {
     justify-content: center;
     font-size: 24px;
     margin: 50px 0;
+    position: relative;
 }
 
 input {
@@ -101,6 +102,8 @@ input {
     transition: border 0.3s;
     
 }
+
+
 
 input:focus  {
     outline: none;
@@ -149,6 +152,12 @@ a {
     color: #60B8DA;
     font-weight: 600;
 }
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
 
 
 
