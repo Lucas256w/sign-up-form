@@ -53,9 +53,49 @@ img {
     opacity: 50%;
 }
 
-#sign-up-container {
-    color: ;
+
+
+
+
+#sign-up-title {
+    text-align: center;
+    margin: 20px 40px;
+    font-weight: 600;
+    font-size: 48px;
 }
+
+#sign-up-title,
+label {
+    color: #153a5b;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 5rem 0;
+}
+
+input {
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid #153a5b;
+    transition: border 0.3s;
+    
+}
+
+input:focus  {
+    outline: none;
+    border: 2px solid #60B8DA;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
 
 
 
@@ -75,5 +115,30 @@ img {
         max-width: 100%;
         width: auto;
        
+    }
+
+    #sign-up-title {
+        margin: 40px 40px;
+        text-align: left;
+    }
+
+    #sign-up-container {
+        flex: 1;
+    }
+
+    #row {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 50px;
+    }
+
+    label {
+        width: 16rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p {
+        align-items: flex-start;
+        margin: 2.5rem 0;
     }
 }
